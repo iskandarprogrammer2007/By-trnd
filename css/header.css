@@ -1,0 +1,196 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 0;
+    z-index: 99;
+    border-bottom: 1px solid gray;
+}
+
+.show-navshrink {
+    box-shadow: 0px 0px 15px skyblue;
+    background-color: white;
+}
+
+main {
+    padding-top: 100px;
+}
+
+.header__nav-right,
+.header__nav-btns {
+    gap: 20px;
+}
+
+.header__nav-list {
+    gap: 15px;
+}
+
+.header__nav-item {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+    border-bottom: 1.5px solid transparent;
+    transition: 0.3s;
+    position: relative;
+}
+
+.header__nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.5px;
+    background: black;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.header__nav-item::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: black;
+    top: 0;
+    right: 0;
+    transition: 0.3s;
+}
+
+.header__nav-item:hover {
+    color: orange;
+}
+
+.header__nav-item:hover::after {
+    color: orange;
+    background-color: orange;
+    width: 100%;
+}
+
+.header__nav-item:hover::before {
+    color: orange;
+    background-color: orange;
+    width: 100%;
+}
+
+.nav__right-border {
+    position: absolute;
+    width: 2px;
+    height: 0;
+    background: orange;
+    top: 0;
+    right: 0px;
+    transition: 0.3s;
+}
+
+.header__nav-item:hover .nav__right-border {
+    height: 100%;
+}
+
+.nav__right-border-2 {
+    position: absolute;
+    width: 2px;
+    height: 0%;
+    background: orange;
+    bottom: 0;
+    left: 0px;
+    transition: 0.3s;
+}
+
+.header__nav-item:hover .nav__right-border-2 {
+    height: 100%;
+}
+
+.header__nav__login-in{
+    padding: 6px 15px;
+    border: 1.5px solid black;
+    background: transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header__nav__login-in:hover{
+    border-color: orange;
+    color: orange;
+    transition: 0.3s;
+}
+
+.header__nav-contact-btn {
+    padding: 6px 15px;
+    border: 1.5px solid black;
+    background: transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header__nav-contact-btn:hover {
+    border-color: orange;
+    color: orange;
+    transition: 0.3s;
+}
+
+
+.lang{
+    padding: 6px 15px;
+    border: 1.5px solid black;
+    background: transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.lang:hover{
+    border-color: orange;
+    color: orange;
+    transition: 0.3s;
+}
+
+.header__nav-hamburger-btn {
+    border: none;
+    background: transparent;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header__nav-hamburger-btn span {
+    width: 20px;
+    height: 3px;
+    background: black;
+    border-radius: 2px;
+}
+
+@media(max-width:910px) {
+    .header__nav-hamburger-btn {
+        display: flex;
+
+    }
+
+    .header__nav-list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background: white;
+        height: 100vh;
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0px 0px 15px skyblue;
+        transition: 0.4s;
+        z-index: 9999;
+    }
+
+    .header__nav-item::after {
+        height: 2px;
+    }
+
+    .show-header__nav-list {
+        left: 0;
+
+    }
+
+}
+

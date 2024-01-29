@@ -1,0 +1,61 @@
+:root{
+    --primaryColor:black;
+    --secondaryColor:white;
+    --linksColor:#01BAB3;
+    --containerwidth:80%;
+    --backgroundColor:skyblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: var(--containerwidth);
+    margin: 0 auto;
+}
+
+@media(min-width:1440px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+.df {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bactop {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    background-color: var(--backgroundColor);
+    font-size: 22px;
+    padding: 4px 10px;
+    border-radius: 2px;
+    color: var(--secondaryColor);
+    display: none;
+}
+
+.show-bactop {
+    display: block !important;
+}

@@ -1,0 +1,329 @@
+:root{
+    --buttonFontsize:18px;
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+input:hover{
+    border: 2px solid var(--linksColor);
+}
+
+button{
+    border-radius: 5px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4F8FA;
+    margin-top: 100px;
+}
+
+.card__container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card__sign__in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    background-color: var(--secondaryColor);
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card__signin__tittle{
+    color: var(--primaryColor);
+    font-family: "Segoe UI";
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card__signin__text{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.card__signin__text p{
+    color: #444150;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.card__signin__text a{
+    color: var(--linksColor);
+    font-family: "Segoe UI";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.sign__in__firstname{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 5px;
+}
+
+#signin__firstname{
+    font-size: var(--buttonFontsize);
+    height: 50px;
+    padding: 0 10px;
+    transition: 0.3s;
+}
+
+#signin__firstname:hover {
+    border: 2px solid var(--linksColor);
+}
+
+.sign__in__lastname {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 5px;
+}
+
+#signin__lastname{
+    font-size: var(--buttonFontsize);
+    height: 50px;
+    padding: 0 10px;
+    transition: 0.3s;
+}
+
+#signin__lastname:hover{
+    border: 2px solid var(--linksColor);
+}
+
+.signin__names{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+label{
+    display: block;
+}
+
+label p{
+    display: inline-block;
+    color: var(--linksColor);
+}
+
+.sign__in__birth__date{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+}
+
+#signin__birthdate{
+    font-size: var(--buttonFontsize);
+    height: 50px;
+    padding: 0 10px;
+    transition: 0.3s;
+}
+
+#signin__birthdate:hover{
+    border: 2px solid var(--linksColor);
+}
+
+.signin__gender{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sign__in__gender-male{
+    width: 50px;
+    height: 20px;
+}
+
+#sign__in__gender-female {
+    width: 50px;
+    height: 20px;
+}
+
+#signin__male{
+    align-items: center;
+    width: 300px;
+    border: 1px solid var(--primaryColor);
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+#signin__female{
+    align-items: center;
+    width: 300px;
+    border: 1px solid var(--primaryColor);
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+#signin__male:hover,#signin__female:hover{
+    border: 2px solid var(--linksColor);
+    color: var(--linksColor);
+}
+
+
+
+
+
+.female{
+    display: inline-block;
+    color: #444150;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.signin__male{
+    display: block;
+}
+
+@media(max-width:1360px) {
+    .signin__gender {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    #signin__male {
+        width: 100%;
+    }
+    #signin__female{
+        width: 100%;
+    }
+
+}
+
+.signin__skype{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+}
+
+#sign-in__skype{
+    height: 50px;
+    padding: 0 10px;
+}
+
+#sign-in__skype:hover{
+    border: 2px solid var(--linksColor);
+}
+
+.sign-in__btn{
+    display: flex;
+    border: 1px solid transparent;
+    background-color: var(--linksColor);
+    color: var(--secondaryColor);
+    width: 80%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.sign-in__btn:hover{
+    border: 1px solid var(--linksColor);
+    background-color: var(--secondaryColor);
+    color: var(--linksColor);
+}
+
+/* sign upni va bazi umumiy css kodlari yakunlandi */
+
+/* log in ni 1-sahifasi css kodlari boshlandi */
+
+.login-in__email,.login-in__password{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#login__email,#login__password,#password{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.password-box{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.password-box i{
+    position: absolute;
+    top: 30%;
+    right: 10px;
+}
+
+/* log in ni 1-sahifasi css kodlari tugadi */
+
+/* log in ni 2-sahifasi css kodlari boshlandi */
+
+.login__phone{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#phone__number{
+    border: 1px solid gray;
+    border-radius: 0px 5px 5px 0px;
+    width: 83%;
+    height: 50px;
+}
+
+.number{
+    display: flex;
+    
+}
+
+#phone__number__code{
+    border: 1px solid gray;
+    border-radius: 5px 0 0 5px;
+    width: 17%;
+}
+
+.login__location{
+    display: flex;
+    justify-content: space-between;
+}
+
+#country,#city{
+    width: 100%;
+}
+
+.location__country,.location__city{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 45%;
+}
+
+.login__password{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
